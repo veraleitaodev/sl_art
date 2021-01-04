@@ -253,7 +253,14 @@ xxxxx
 
 - Go to the resources tab, go to the add-ons and search for Heroku Postgres. Use the free plan and click on the submit order form button.
 
-- Go back to your code editor and install dj_database_url and psycopg2-binary , for the use of heroku Postgres.  <i>pip3 install dj_database_url and pip3 install psycopg2-binary.</i> After that freeze the requirements, <i>pip3 freeze > requirementstxt</i>.
+- On your code editor install dj_database_url and psycopg2-binary with the commands
+            <i> pip3 install dj_database_url
+
+            pip3 install psycopg2-binary </i>
+
+ for the use of heroku Postgres.
+
+- After that freeze the requirements, <i>pip3 freeze > requirements.txt</i>.
 
 - Go to settings.py and import dj_database_url.  Go to the database settings section and  comment out the the default configuration and add a new database default with a call to dj_database_url.parse(). Go back to Heroku, go to the settings tab and reveal the config vars. Copy the database-url value and past this into the parentheses (). 
 <i>DATABASE = {

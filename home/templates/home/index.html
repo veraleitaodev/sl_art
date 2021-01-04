@@ -1,7 +1,22 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-    <h1 class="text-danger">It works!</h1>
+    <div class="container h-100">
+        <div class="row">
+            <div class="col mx-auto my-auto px-3 py-4">
+                <h1 class="artist-name text-center">Sandra Lopes</h1>
+                <h3 class="subtitle-artist-name text-center">Modern Impressionist Artist</h3>
+            </div>
+        </div>
+    </div>
 {% endblock %}
   
