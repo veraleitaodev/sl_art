@@ -1,0 +1,13 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Tajawal';
+    color: black;
+}
+
+.home-image-container {
+    background-image: url('/media/homepage_background_cropped_padeira.jpg') no-repeat right bottom fixed;
+    background-size: cover;
+}
